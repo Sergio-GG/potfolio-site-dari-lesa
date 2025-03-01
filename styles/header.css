@@ -1,0 +1,212 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+
+}
+
+.text-font-nav{
+    font-family: "Geist";
+    font-weight: 300;
+}
+
+
+
+.section-nav-dark{
+    margin: 0;
+    min-width: 100%;
+    background-color: #1d2f30;
+}
+
+.section-nav-light{
+    background-color: #dbdbb1;
+}
+
+.my-container {
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 30px;
+    position: relative;
+}
+
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none !important;
+}
+
+
+
+
+a.link{
+    color: #BAE249;
+}
+
+.header-bg{
+    background-image: url('../img/les_2560x1440.jpg');
+    background-repeat: no-repeat, no-repeat;
+    background-size: cover, contain;
+    background-position: center center;
+    width: 100%;
+    min-height: 490px;
+
+}
+
+.header-row{
+    display: flex;
+    justify-content:space-between;
+    width: 100%;
+    
+}
+
+.header-blur{
+    background: rgba(54, 48, 48, 0.333);
+    backdrop-filter: blur(1px);
+    min-height: 490px;
+}
+
+.custom-logo{
+    display: block;
+    width: 100%;
+    min-width: 200px;
+}
+
+.nav-bar{
+    display: none;
+    cursor: pointer;
+}
+
+.nav-bar-icon{
+    fill:#BAE249;
+    width: 24px;
+}
+
+
+
+.list-nav{
+    display: flex;
+    justify-content: end;
+    align-self: center;
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
+    gap: 10%;
+}
+
+
+
+
+
+.logotype {
+    display: flex;
+    justify-content: flex-start;
+    width: 28%;
+}
+
+.logo-pict{
+    padding: 0;
+}
+
+.nav-info {
+    align-content: center;
+    width: 50%;
+    flex: 1 1 auto;
+}
+.sign-in{
+    display: flex;
+    justify-content: end;
+    gap: 50px;
+    width: 10%;
+    flex: 1 1 auto;
+}
+
+.sign-in-icon-field{
+    display: flex;
+    align-items: center;
+}
+
+.sign-in-text-field{
+    display: flex;
+    align-items: center;
+}
+.sign-in-text-field > img {
+    fill: 10px;
+}
+
+.sign-in-icon {
+   
+}
+
+@media (max-width: 879px) {
+    .nav-bar-icon{
+        
+    } 
+    .nav-info{
+        display: flex;
+        justify-content: space-between;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 50%;
+        min-height: 170px;
+        background-color: #1d2f30;
+        gap: 5px;
+        padding: 0 30px;
+        transition: ease .7s;
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    }
+
+    .nav-info.active {
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+        z-index: 9;
+    }
+
+    .sign-in{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: end;
+        position: absolute;
+        top: 100%;
+        right: 0;
+        width: 50%;
+        min-height: 170px;
+        background-color:#1d2f30;
+        gap: 30px;
+        padding: 0 30px;
+        transition: ease .7s;
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    }
+
+    .sign-in.active {
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+        z-index: 9;
+    }
+
+    .list-nav{
+        display: flex;
+        flex-direction: column;
+    }
+    .nav-bar-icon{
+        display: block;
+    }
+    .nav-bar{
+        display: flex;
+        width: 20%;
+        justify-content: end;
+        align-items: center;
+        cursor: pointer;
+    }
+   
+
+   
+}
+

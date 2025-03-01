@@ -1,0 +1,139 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+.na-link > p {
+    margin: 0;
+    width: 100%;
+}
+
+
+h1.title-donate-text{
+    color: #fff;
+    font-weight: 300;
+}
+
+.na-link{
+    color: #fff;
+
+}
+
+.na-link:hover{
+ 
+}
+
+.usual-text{
+    color: #fff;
+    font-weight: 100;
+}
+
+.footer-us{
+    background-color: #dbdbb1;
+}
+
+.footer-info{
+   
+}
+
+.social-media{
+    align-content: center;
+}
+
+.footer-list{
+    height: 100%;
+    display: flex;
+    justify-content:end;
+    align-items: center;
+}
+
+.footer-list-nav{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+    gap: 40px;
+    
+}
+
+.social-media-icons{
+    display: flex;
+    justify-content: center;
+    gap: calc(10px + 2vw);
+}
+
+.footer-donate{
+    background-image: url('../img/paporotnik_listia_zelenyj_123899_2560x1024.jpg');
+    background-repeat: no-repeat, no-repeat;
+    background-size: cover, contain;
+    background-position: center center;
+    width: 100%;
+    min-height: 460px;
+}
+
+.donate-info{
+    padding: 60px 0;
+}
+
+.btn-submit{
+    background-color: #BAE249 !important;
+}
+
+@media (max-width: 380px){
+    .footer-list{
+        justify-content: space-between;
+    }
+    .footer-list-nav{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        gap:1%;
+    }
+    .na-link{
+       display: flex;
+       flex-wrap: nowrap;
+       text-size-adjust: 80%;
+    }
+    
+}
+
+@media (min-width: 381px) and (max-width: 480px){
+    .footer-list{
+        justify-content: space-between;
+    }
+    .footer-list-nav{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        gap:3%;
+    }
+    .na-link{
+       text-size-adjust: 90%;
+       
+    }
+    
+}
+
+@media (min-width: 481px) and (max-width: 990px){
+    .footer-list{
+        justify-content: space-between;
+    }
+    .footer-list-nav{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        gap:3%;
+    }
+    .na-link{
+       text-size-adjust: 100%;
+       
+    }
+}

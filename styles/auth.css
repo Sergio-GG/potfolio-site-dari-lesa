@@ -1,0 +1,81 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+.auth-section-nav-dark{
+    width: 100%;
+    min-height: 100vh;
+    margin: 0 auto;
+    background-color: #1d2f30;
+}
+
+.my-container-auth{
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 30px;
+}
+
+.auth-block{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    padding: 200px 0;
+}
+
+.auth-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #0B1919;
+    width: 30%;
+    min-width: 400px;
+    border-radius: 10px;
+    box-shadow: 0 2px 20px 0 rgba(0,0,0,0.3);
+}
+
+.title-donate-auth{
+    display: flex;
+    justify-content: center;
+    padding: 30px 0;
+    background-color: #83A440;
+    border-radius: 10px 10px 0 0;
+}
+
+.form-section-auth{
+    padding: 30px;
+    border-radius: 1px;
+}
+
+.btn-submit-auth{
+    background-color: #BAE249;
+}
+
+.btn-submit-auth:hover{
+    background-color: #899D9D;
+    border: 1px solid #000;
+}
+
+.btn-submit-auth:active{
+    background-color: #83A440 !important;
+}
+
+.form-button-submit{
+    display: flex;
+    justify-content: center;
+}
+
+@media (max-width: 540px){
+    .auth-info{
+        min-width: 90%;
+        height: 500px;
+        justify-content:start;
+    }
+    .btn-submit-auth{
+        width: 100%;
+    }
+}
