@@ -92,7 +92,7 @@ h1.title-donate-text{
         width: 100%;
         display: flex;
         flex-direction: row;
-        justify-content: space-between;
+        justify-content: end;
         gap: 1%;
     }
     .na-link{
