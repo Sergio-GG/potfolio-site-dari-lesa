@@ -84,7 +84,7 @@ h1.title-donate-text{
     background-color: #BAE249 !important;
 }
 
-@media (max-width: 380px){
+@media (min-width: 280px) and (max-width: 380px){
     .footer-list{
         justify-content: space-between;
     }
@@ -93,11 +93,10 @@ h1.title-donate-text{
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-        gap:1%;
+        gap: 1%;
     }
     .na-link{
        display: flex;
-       flex-wrap: nowrap;
        text-size-adjust: 70%;
     }
     
@@ -112,7 +111,7 @@ h1.title-donate-text{
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-        gap:3%;
+        gap: 3%;
     }
     .na-link{
        text-size-adjust: 90%;
