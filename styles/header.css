@@ -101,6 +101,28 @@ a.link{
     gap: 10%;
 }
 
+.na-link-header{
+    position: relative;
+    color: #fff;
+
+}
+
+.na-link-header:after{
+    display: block;
+    position: absolute;
+    content: "";
+    left: 0;
+    height: 2px;
+    width: 0;
+    background-color: #fff;
+    transition: width 0.3s ease-out;
+}
+
+.na-link-header:hover:after,
+.na-link-header:focus:after{
+    width: 100%;
+}
+
 
 
 

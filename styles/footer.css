@@ -17,12 +17,24 @@ h1.title-donate-text{
 }
 
 .na-link{
+    position: relative;
     color: #fff;
-
 }
 
-.na-link:hover{
- 
+.na-link:after{
+    display: block;
+    position: absolute;
+    content: "";
+    left: 0;
+    height: 2px;
+    width: 0;
+    background-color: #fff;
+    transition: width 0.3s ease-out;
+}
+
+.na-link:hover:after,
+.na-link:focus:after{
+    width: 100%;
 }
 
 .usual-text{
@@ -80,10 +92,10 @@ h1.title-donate-text{
 }
 
 .btn-submit{
-    background-color: #BAE249;
+    background-color: #BAE249 !important;
 }
 
-@media (max-width: 380px){
+@media (max-width: 380px){ 
     .footer-list{
         justify-content: space-between;
     }
@@ -95,11 +107,9 @@ h1.title-donate-text{
         gap: 1%;
     }
     .na-link{
-        font-size: 70%;
+        font-size: 80%;
     } 
-    .btn-submit{
-        background-color: #eb2d47 !important;
-    }
+    
 }
 
 @media (min-width: 381px) and (max-width: 480px){
