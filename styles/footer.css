@@ -8,7 +8,6 @@ body {
 
 .na-link > p {
     margin: 0;
-    width: 100%;
 }
 
 
@@ -96,7 +95,7 @@ h1.title-donate-text{
         gap: 1%;
     }
     .na-link{
-        text-size-adjust: 70%;
+        font-size: 70%;
     } 
     .btn-submit{
         background-color: #eb2d47 !important;
@@ -115,7 +114,7 @@ h1.title-donate-text{
         gap: 3%;
     }
     .na-link{
-       text-size-adjust: 90%; 
+       font-size: 90%; 
     } 
 }
 
@@ -131,7 +130,7 @@ h1.title-donate-text{
         gap: 3%;
     }
     .na-link{
-       text-size-adjust: 100%;
+       font-size: 100%;
        
     }
 }
